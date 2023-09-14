@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Rancho&display=swap" rel="stylesheet">
+    <title>To-Do App</title>
+</head>
+<body>
+    <h1>To-Do List</h1>
+    <div class="task-add">
+        <div class="add">Add your Tasks</div>
+        <input type="text" id="taskInput" class="taskInput" placeholder="Enter your task">
+        <button id="addTaskBtn" class="addTaskBtn">Add</button>
+    </div>
+    <div class="container">
+        <div class="task-list">
+            <div class="task-list-header">
+                <h2>Pending Tasks</h2>
+                <div class="task-count">0 Tasks</div>
+            </div>
+            <ul id="pendingTasks">
+                <!-- Pending tasks will be added here -->
+            </ul>
+        </div>
+
+        <div class="task-list">
+            <div class="task-list-header">
+                <h2>Completed Tasks</h2>
+                <div class="task-count">0 Tasks</div>
+            </div>
+            <ul id="completedTasks">
+                <!-- Completed tasks will be added here -->
+            </ul>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
